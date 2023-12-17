@@ -30,11 +30,6 @@ app.post('/api/orders/placeorder', async (req, res) => {
   
     res.json({ success: true, order: order }); // Send uniquePin in the response
   });
-
-    app.get("*", (req, res) => {
-      res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-    });
-
   
 app.get("/",(req,res) =>
 {
